@@ -1,0 +1,12 @@
+.chooseClass-button {
+  background-color: inherit;
+  border: 0;
+}
+
+.chooseClass-button:hover {
+  background-color: #bbb;
+}
+
+.chooseClass-button img{
+  width: 200px;
+}

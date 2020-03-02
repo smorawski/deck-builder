@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import GloomhavenImage from './resources/gloomhaven.png';
+import Router from './routes';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="mainPage">
+      <header className="mainPage-header">
+        <img src={GloomhavenImage} className="gloomhaven-image" alt="logo" />
       </header>
+      <div className="mainPage-content">
+        <Router />
+      </div>
     </div>
   );
 }
