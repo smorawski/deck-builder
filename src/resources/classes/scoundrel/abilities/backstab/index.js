@@ -1,5 +1,5 @@
 import image from './backstab.jpg';
-import { TAGS } from '../../../../constants/card';
+import TAGS from '../../../../other/tags';
 
 export default {
   name: 'backstab',

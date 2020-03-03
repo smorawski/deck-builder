@@ -1,8 +1,8 @@
 import image from './single-out.jpg';
-import { TAGS } from '../../../../constants/card';
+import TAGS from '../../../../other/tags';
 
 export default {
-  name: 'single-out',
+  name: 'singleOut',
   initiative: 86,
   image,
   level: 1,

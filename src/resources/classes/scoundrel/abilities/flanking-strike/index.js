@@ -1,8 +1,8 @@
 import image from './flanking-strike.jpg';
-import { TAGS } from '../../../../constants/card';
+import TAGS from '../../../../other/tags';
 
 export default {
-  name: 'flanking-strike',
+  name: 'flankingStrike',
   initiative: 4,
   image,
   level: 1,

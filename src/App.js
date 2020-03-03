@@ -1,5 +1,5 @@
 import React from 'react';
-import GloomhavenImage from './resources/gloomhaven.png';
+import ResourcesProvider from './resources/resource-provider';
 import Router from './routes';
 
 import './App.css';
@@ -7,10 +7,10 @@ import './App.css';
 function App() {
   return (
     <div className="mainPage">
-      <header className="mainPage-header">
-        <img src={GloomhavenImage} className="gloomhaven-image" alt="logo" />
+      <header className="mainPage__header">
+        <img src={ResourcesProvider.getGloomhavenLogo()} className="gloomhavenImage" alt="logo" />
       </header>
-      <div className="mainPage-content">
+      <div className="mainPage__content">
         <Router />
       </div>
     </div>

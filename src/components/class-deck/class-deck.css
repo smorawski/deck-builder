@@ -4,10 +4,10 @@
   grid-template-columns: min(500px) 10px min(500px);
 }
 
-.classDeck-allCards {
+.classDeck__allCards {
   grid-area: allCards
 }
 
-.classDeck-choosedCards {
+.classDeck__choosedCards {
   grid-area: choosedCards
 }

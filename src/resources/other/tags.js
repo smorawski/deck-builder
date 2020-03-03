@@ -48,7 +48,7 @@ const DURATION = {
   PERMANENT: 'permanent',
 };
 
-export const TAGS = {
+export default {
   ACTIONS,
   OTHER,
   EFFECTS,

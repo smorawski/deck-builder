@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { TAGS } from './card';
+import ResourceProvider from '../resources/resource-provider';
 
 export const abilityPartPropType = PropTypes.shape({
   attacks: PropTypes.arrayOf(PropTypes.string),
   moves: PropTypes.arrayOf(PropTypes.string),
-  tags: PropTypes.arrayOf(PropTypes.oneOf(TAGS)),
+  tags: PropTypes.arrayOf(PropTypes.oneOf(ResourceProvider.getAllTagsValues())),
 });
 
 export const abilityPropType = PropTypes.shape({
