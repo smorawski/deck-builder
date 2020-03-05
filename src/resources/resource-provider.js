@@ -16,8 +16,6 @@ const abilities = classNames.reduce(
   {},
 );
 
-console.log(abilities);
-
 class ResourceProvider {
   static getAllClassNames() {
     return classNames;

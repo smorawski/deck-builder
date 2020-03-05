@@ -1,21 +1,21 @@
-import image from './single-out.jpg';
+import image from './thiefs-knack.jpg';
 import TAGS from '../../../../other/tags';
 
 export default {
-  name: 'singleOut',
-  initiative: 86,
+  name: 'thiefsKnack',
+  initiative: 23,
   image,
   level: '1',
   top: {
-    attacks: ['3/5'],
     tags: [
       TAGS.OTHER.XP,
+      TAGS.ACTIONS.DISARM_TRAP,
     ],
   },
   bottom: {
+    attacks: ['3'],
     tags: [
       TAGS.OTHER.XP,
-      TAGS.DURATION.USES,
     ],
   },
 };

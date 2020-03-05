@@ -1,11 +1,11 @@
 .classDeck {
   display: grid;
-  grid-template: "allCards . choosedCards";
+  grid-template: "availableCards . choosedCards";
   grid-template-columns: min(500px) 10px min(500px);
 }
 
-.classDeck__allCards {
-  grid-area: allCards
+.classDeck__availableCards {
+  grid-area: availableCards
 }
 
 .classDeck__choosedCards {

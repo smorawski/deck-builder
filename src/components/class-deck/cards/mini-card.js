@@ -1,31 +1,25 @@
 import React, { useState } from 'react';
 import BootstrapCard from 'react-bootstrap/Card';
+import { useDrag } from 'react-dnd';
 
-import CardActions, {
-  AddCard,
-  PreviewCard,
-  RemoveCard,
-} from '../actions';
+import { MiniCardActions } from '../actions';
 import { abilityPropType } from '../../../constants/prop-types';
 
 const MiniCard = ({ ability }) => {
   const [showActions, setShowActions] = useState(false);
+  const [, drag] = useDrag({
+    item: { type: 'card', id: ability.name },
+  });
   return (
     <BootstrapCard
+      ref={drag}
       style={{ width: '10rem' }}
       onMouseEnter={() => setShowActions(true)}
       onMouseLeave={() => setShowActions(false)}
     >
       <BootstrapCard.Img variant="top" src={ability.image} />
       {
-        showActions
-          && (
-            <CardActions>
-              <PreviewCard cardName={ability.name} />
-              <AddCard cardName={ability.name} />
-              <RemoveCard cardName={ability.name} />
-            </CardActions>
-          )
+        showActions && <MiniCardActions cardName={ability.name} />
       }
     </BootstrapCard>
   );

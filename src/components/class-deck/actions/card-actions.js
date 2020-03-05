@@ -4,7 +4,10 @@ import classnames from 'classnames';
 
 import './card-actions.css';
 
-const AddCard = ({ children, big }) => (
+const CardActions = ({
+  big,
+  children,
+}) => (
   <div
     className={
       classnames(
@@ -17,14 +20,13 @@ const AddCard = ({ children, big }) => (
   </div>
 );
 
-AddCard.propTypes = {
-  children: PropTypes.node,
+CardActions.propTypes = {
   big: PropTypes.bool,
+  children: PropTypes.node.isRequired,
 };
 
-AddCard.defaultProps = {
-  children: null,
+CardActions.defaultProps = {
   big: false,
 };
 
-export default AddCard;
+export default CardActions;

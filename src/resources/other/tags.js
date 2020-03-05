@@ -11,6 +11,7 @@ const ACTIONS = {
 const OTHER = {
   XP: 'xp',
   LOST: 'lost',
+  RANGED: 'ranged',
 };
 
 // effects

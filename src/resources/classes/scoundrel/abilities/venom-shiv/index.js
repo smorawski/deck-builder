@@ -1,11 +1,11 @@
-import image from './venom-strike.jpg';
+import image from './venom-shiv.jpg';
 import TAGS from '../../../../other/tags';
 
 export default {
-  name: 'venomStrike',
+  name: 'venomShiv',
   initiative: 60,
   image,
-  level: 1,
+  level: '1',
   top: {
     attacks: ['3'],
     tags: [
