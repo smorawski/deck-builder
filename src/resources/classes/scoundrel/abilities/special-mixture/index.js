@@ -1,11 +1,12 @@
 import image from './special-mixture.jpg';
-import TAGS from '../../../../other/tags';
+import TAGS from '../../../../tags';
+import { LEVELS } from '../../../../other';
 
 export default {
   name: 'specialMixture',
   initiative: 33,
   image,
-  level: '1',
+  level: LEVELS[1],
   top: {
     tags: [
       TAGS.ACTIONS.HEAL,

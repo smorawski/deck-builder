@@ -1,17 +1,18 @@
 import image from './throwing-knieves.jpg';
-import TAGS from '../../../../other/tags';
+import TAGS from '../../../../tags';
+import { LEVELS } from '../../../../other';
 
 export default {
   name: 'throwingKnieves',
   initiative: 10,
   image,
-  level: '1',
+  level: LEVELS[1],
   top: {
     attacks: ['2'],
     tags: [
       TAGS.OTHER.XP,
       TAGS.OTHER.RANGED,
-      TAGS.TARGETS.MULTIPLE_TARGETS,
+      TAGS.TARGETS.MULTIPLE,
     ],
   },
   bottom: {

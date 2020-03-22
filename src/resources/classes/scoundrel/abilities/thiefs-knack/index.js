@@ -1,11 +1,12 @@
 import image from './thiefs-knack.jpg';
-import TAGS from '../../../../other/tags';
+import TAGS from '../../../../tags';
+import { LEVELS } from '../../../../other';
 
 export default {
   name: 'thiefsKnack',
   initiative: 23,
   image,
-  level: '1',
+  level: LEVELS[1],
   top: {
     tags: [
       TAGS.OTHER.XP,

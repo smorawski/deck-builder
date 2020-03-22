@@ -1,0 +1,11 @@
+.filterButton {
+  padding: 2px;
+  background: inherit;
+  border: none;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.filterButton--active {
+  background-color: rgba(0, 0, 0, 0.2);
+}

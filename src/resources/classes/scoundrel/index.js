@@ -1,11 +1,9 @@
-import image from './scoundrel.png';
-import icon from './scoundrel.svg';
 import abilities from './abilities';
+import TAGS, { TAGS_IMAGES } from '../../tags';
 
 export default {
-  name: 'scoundrel',
-  image,
-  icon,
+  name: TAGS.CLASSES.SCOUNDREL,
+  icon: TAGS_IMAGES[TAGS.CLASSES.SCOUNDREL],
   abilities,
   handSize: 9,
 };

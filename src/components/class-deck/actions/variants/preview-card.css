@@ -1,0 +1,7 @@
+.previewCard {
+  display: inline;
+}
+
+.previewCard__image {
+  width: 240px;
+}

@@ -1,6 +1,22 @@
-.cardsList {
+.cardsList__content {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  min-height: 80vh
+  min-height: 80vh;
 }
+
+.cardsList__filters {
+  top: 0;
+  position: sticky;
+  border-radius: 5px;
+  z-index: 2;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsList__filters .filter {
+  padding: 5px;
+}
+

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import preview from './preview/reducer';
 import deck from './deck/reducer';
+import filter from './filter/reducer';
 
 export default combineReducers({
-  preview,
   deck,
+  filter,
 });

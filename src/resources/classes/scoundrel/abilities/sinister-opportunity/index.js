@@ -1,16 +1,18 @@
 import image from './sinister-opportunity.jpg';
-import TAGS from '../../../../other/tags';
+import TAGS from '../../../../tags';
+import { LEVELS } from '../../../../other';
 
 export default {
   name: 'sinisterOpportunity',
   initiative: 93,
   image,
-  level: 'x',
+  level: LEVELS.X,
   top: {
     attacks: ['3/11'],
     tags: [
       TAGS.OTHER.XP,
-      TAGS.USE_ELEMENTS.USE_DARKNESS,
+      TAGS.USE_ELEMENTS.DARKNESS,
+      TAGS.CLASSES.SCOUNDREL,
     ],
   },
   bottom: {

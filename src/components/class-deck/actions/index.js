@@ -1,2 +1,2 @@
-export { default as MiniCardActions } from './mini-card-actions';
-export { default as PreviewCardActions } from './preview-card-actions';
+export { default as CardActions } from './card-actions';
+export { default as InlineCardActions } from './inline-card-actions';

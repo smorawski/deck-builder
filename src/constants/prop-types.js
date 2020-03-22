@@ -11,7 +11,7 @@ export const abilityPropType = PropTypes.shape({
   name: PropTypes.string.isRequired,
   initiative: PropTypes.number.isRequired,
   image: PropTypes.node.isRequired,
-  level: PropTypes.number.isRequired,
+  level: PropTypes.string.isRequired,
   top: abilityPartPropType.isRequired,
   bottom: abilityPartPropType.isRequired,
 });

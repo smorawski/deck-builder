@@ -1,17 +1,18 @@
 import image from './smoke-bomb.jpg';
-import TAGS from '../../../../other/tags';
+import TAGS from '../../../../tags';
+import { LEVELS } from '../../../../other';
 
 export default {
   name: 'smokeBomb',
   initiative: 12,
   image,
-  level: '1',
+  level: LEVELS[1],
   top: {
     tags: [
       TAGS.EFFECTS.INVISIBLE,
       TAGS.OTHER.XP,
       TAGS.DURATION.USES,
-      TAGS.INCREASE_ELEMENTS.INCREASE_DARKNESS,
+      TAGS.INCREASE_ELEMENTS.DARKNESS,
     ],
   },
   bottom: {

@@ -1,0 +1,22 @@
+.deckList {
+  position: fixed;
+  width: 360px;
+  overflow: scroll;
+  height: 100%;
+}
+
+.deckList__stats {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.deckList__content {
+  height: 100%;
+}
+
+.deckList__stats__handSize.error{
+  color: #C11025;
+}

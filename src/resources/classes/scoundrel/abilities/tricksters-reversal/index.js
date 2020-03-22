@@ -1,11 +1,12 @@
 import image from './tricksters-reversal.jpg';
-import TAGS from '../../../../other/tags';
+import TAGS from '../../../../tags';
+import { LEVELS } from '../../../../other';
 
 export default {
   name: 'trickstersReversal',
   initiative: 9,
   image,
-  level: 'x',
+  level: LEVELS.X,
   top: {
     attacks: ['2'],
     tags: [
@@ -15,7 +16,7 @@ export default {
   },
   bottom: {
     tags: [
-      TAGS.DURATION.ONE_TURN,
+      TAGS.DURATION.ONE_ROUND,
     ],
   },
 };
