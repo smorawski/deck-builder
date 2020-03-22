@@ -1,0 +1,7 @@
+.popupCard {
+  position: absolute;
+}
+
+.popupCard img {
+  max-width: 15rem;
+}

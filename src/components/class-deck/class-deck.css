@@ -1,13 +1,14 @@
 .classDeck {
-  display: grid;
-  grid-template: "allCards . choosedCards";
-  grid-template-columns: min(500px) 10px min(500px);
+  display: flex;
 }
 
-.classDeck-allCards {
-  grid-area: allCards
+.classDeck__availableCards,
+.classDeck__currentDeck {
+  padding: 20px;
 }
 
-.classDeck-choosedCards {
-  grid-area: choosedCards
+.classDeck__currentDeck {
+  min-height: 100vh;
+  flex: 0 0 400px;
+  position: relative;
 }

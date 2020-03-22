@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
-import { TAGS } from './card';
+import ResourceProvider from '../resources/resource-provider';
 
 export const abilityPartPropType = PropTypes.shape({
   attacks: PropTypes.arrayOf(PropTypes.string),
   moves: PropTypes.arrayOf(PropTypes.string),
-  tags: PropTypes.arrayOf(PropTypes.oneOf(TAGS)),
+  tags: PropTypes.arrayOf(PropTypes.oneOf(ResourceProvider.getAllTagsValues())),
 });
 
 export const abilityPropType = PropTypes.shape({
   name: PropTypes.string.isRequired,
   initiative: PropTypes.number.isRequired,
   image: PropTypes.node.isRequired,
-  level: PropTypes.number.isRequired,
+  level: PropTypes.string.isRequired,
   top: abilityPartPropType.isRequired,
   bottom: abilityPartPropType.isRequired,
 });

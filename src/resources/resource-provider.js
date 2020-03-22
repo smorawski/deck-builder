@@ -1,28 +1,41 @@
-// I'll deliver all data, just me, no one else!
-import scoundrel from './scoundrel';
+import _pick from 'lodash/pick';
 
-const classes = {
-  scoundrel,
-};
+import { CLASSES_OBJECT } from './classes';
+import TAGS, { TAGS_IMAGES } from './tags';
+import { LEVELS } from './other';
 
-const classNames = Object.values(classes).map(({ name }) => name);
+const classNames = Object.values(TAGS.CLASSES);
 
 const abilities = classNames.reduce(
-  (acc, className) => ({ ...acc, ...classes[className].abilities }),
+  (acc, className) => {
+    const classObject = CLASSES_OBJECT[className];
+    if (!classObject || !classObject.abilities) {
+      return acc;
+    }
+    return ({ ...acc, ...(classObject.abilities) });
+  },
   {},
 );
 
 class ResourceProvider {
+  static getAbilityLevels() {
+    return Object.values(LEVELS);
+  }
+
   static getAllClassNames() {
     return classNames;
   }
 
+  static getClassHandSize(classKey) {
+    return CLASSES_OBJECT[classKey].handSize;
+  }
+
   static getAllClasses() {
-    return Object.values(classes).map(({ name, image }) => ({ name, image }));
+    return Object.values(CLASSES_OBJECT).map(({ name, icon }) => ({ name, image: icon }));
   }
 
   static getClassAbilities(className) {
-    return classes[className] ? Object.values(classes[className].abilities) : [];
+    return CLASSES_OBJECT[className] ? Object.values(CLASSES_OBJECT[className].abilities) : [];
   }
 
   static getAllAbilities() {
@@ -31,6 +44,18 @@ class ResourceProvider {
 
   static getAbility(abilityName) {
     return abilities[abilityName];
+  }
+
+  static getAbilities(abilityNames) {
+    return abilityNames.map((abilityName) => abilities[abilityName]);
+  }
+
+  static getAllTagsValues() {
+    return Object.keys(TAGS_IMAGES);
+  }
+
+  static getImagesForTags(tags) {
+    return _pick(TAGS_IMAGES, tags);
   }
 }
 export default ResourceProvider;
