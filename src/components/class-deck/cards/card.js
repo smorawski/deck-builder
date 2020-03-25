@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import BootstrapCard from 'react-bootstrap/Card';
-import { useDrag } from 'react-dnd';
 
 import { CardActions } from '../actions';
 import { abilityPropType } from '../../../constants/prop-types';
@@ -10,13 +9,9 @@ import './card.css';
 
 const Card = ({ ability, selected }) => {
   const [showActions, setShowActions] = useState(false);
-  const [, drag] = useDrag({
-    item: { type: 'card', id: ability.name },
-  });
   return (
     <BootstrapCard
       className="abilityCard"
-      ref={drag}
       style={{ width: '20rem' }}
       onMouseEnter={() => setShowActions(true)}
       onMouseLeave={() => setShowActions(false)}

@@ -1,16 +1,14 @@
+.tagsFilter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tagsFilter .filterTag {
   margin-right: 15px;
   position: relative;
 }
 
-.filterTag__number {
-  position: absolute;
-  right: 100%;
-  top: 5px;
-}
-
 .tagsFilter .filterTag__button {
   margin-left: 3px;
-
 }
 

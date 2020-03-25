@@ -16,7 +16,3 @@
 .deckList__content {
   height: 100%;
 }
-
-.deckList__stats__handSize.error{
-  color: #C11025;
-}

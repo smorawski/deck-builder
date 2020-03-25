@@ -1,5 +1,6 @@
 .classDeck {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .classDeck__availableCards,
@@ -11,4 +12,47 @@
   min-height: 100vh;
   flex: 0 0 400px;
   position: relative;
+}
+
+.classDeck__availableCards {
+  flex: 2 0 700px;
+  position: relative;
+}
+
+.mobileMenu  {
+  display: none;
+  align-items: center;
+  align-self: center;
+}
+
+@media only screen and (max-width: 1160px) {
+  .classDeck {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .classDeck__currentDeck,
+  .classDeck__availableCards {
+    display: none;
+  }
+
+  .classDeck__currentDeck {
+    flex: 1 0;
+  }
+
+  .classDeck__currentDeck .deckSize {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .classDeck__availableCards {
+    flex: 1 0;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
 }
