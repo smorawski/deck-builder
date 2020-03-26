@@ -5,10 +5,15 @@ import DeckSize from '../common/deck-size';
 
 import './mobile-menu.css';
 
-const MobileMenu = ({ label, onClick, maxCards, currentCards }) => (
+const MobileMenu = ({
+  label,
+  onClick,
+  maxCards,
+  currentCards,
+}) => (
   <div className="mobileMenu">
     <DeckSize maxCards={maxCards} currentCards={currentCards} />
-    <button onClick={onClick}>{label}</button>
+    <button type="button" onClick={onClick}>{label}</button>
   </div>
 );
 

@@ -7,8 +7,8 @@ import { removeCard as removeCardAction } from '../../../state/deck/actions';
 
 const InlineCardActionsRaw = ({ cardName, removeCard, image }) => (
   <div className="inlineCard__actions">
-    <RemoveCard onClick={() => removeCard(cardName)} />
     <PreviewCard image={image} />
+    <RemoveCard onClick={() => removeCard(cardName)} />
   </div>
 );
 

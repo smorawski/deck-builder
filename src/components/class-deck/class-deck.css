@@ -26,6 +26,12 @@
 }
 
 @media only screen and (max-width: 1160px) {
+  .deckList {
+    width: 100%;
+    max-width: 400px;
+    position: static;
+  }
+
   .classDeck {
     flex-direction: column;
     align-items: left;
@@ -37,7 +43,7 @@
   }
 
   .classDeck__currentDeck {
-    flex: 1 0;
+    flex: 1 0 auto;
   }
 
   .classDeck__currentDeck .deckSize {

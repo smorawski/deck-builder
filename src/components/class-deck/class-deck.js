@@ -69,7 +69,6 @@ const ClassDeck = ({
       >
         <CardsList
           abilities={filteredAbilities}
-          selectedAbilities={cardsInDeck}
           onDrop={removeCard}
           tags={filteredAbilitiesTags}
         />

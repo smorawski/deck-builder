@@ -1,37 +1,58 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import BootstrapCard from 'react-bootstrap/Card';
+import { connect } from 'react-redux';
 
-import { CardActions } from '../actions';
 import { abilityPropType } from '../../../constants/prop-types';
+import {
+  addCard as addCardAction,
+  removeCard as removeCardAction,
+} from '../../../state/deck/actions';
+import { isCardInDeck } from '../../../state/deck/selectors';
 
 import './card.css';
 
-const Card = ({ ability, selected }) => {
-  const [showActions, setShowActions] = useState(false);
-  return (
-    <BootstrapCard
-      className="abilityCard"
-      style={{ width: '20rem' }}
-      onMouseEnter={() => setShowActions(true)}
-      onMouseLeave={() => setShowActions(false)}
-    >
-      <BootstrapCard.Img variant="top" src={ability.image} />
-      { selected && <div className="abilityCard__mask" /> }
-      {
-        showActions && <CardActions cardName={ability.name} />
+const Card = ({
+  ability,
+  selected,
+  addCard,
+  removeCard,
+}) => (
+  <BootstrapCard
+    className="abilityCard"
+    style={{ width: '20rem' }}
+    onClick={
+      () => {
+        if (selected) {
+          return removeCard(ability.name);
+        }
+        return addCard(ability.name);
       }
-    </BootstrapCard>
-  );
-};
+  }
+  >
+    <BootstrapCard.Img variant="top" src={ability.image} />
+    { selected && <div className="abilityCard__mask" /> }
+  </BootstrapCard>
+);
 
 Card.propTypes = {
   ability: abilityPropType.isRequired,
   selected: PropTypes.bool,
+  addCard: PropTypes.func.isRequired,
+  removeCard: PropTypes.func.isRequired,
 };
 
 Card.defaultProps = {
   selected: false,
 };
 
-export default Card;
+
+export default connect(
+  (state, { ability: { name } }) => ({
+    selected: isCardInDeck(state, name),
+  }),
+  {
+    addCard: addCardAction,
+    removeCard: removeCardAction,
+  },
+)(Card);
