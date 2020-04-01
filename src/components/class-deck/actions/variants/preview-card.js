@@ -12,7 +12,7 @@ const PreviewCard = ({ image }) => {
   const [ref, position] = usePosition();
 
   const fixedPosition = {
-    x: position.x,
+    x: position.x - 240,
     // if won't, fix the height
     y: position.y + 330 > window.innerHeight ? window.innerHeight - 330 : position.y,
   };
@@ -22,6 +22,8 @@ const PreviewCard = ({ image }) => {
       ref={ref}
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
+      onClick={() => setShow(true)}
+      onBlur={() => setShow(false)}
     >
       <Button variant="secondary">
         ?

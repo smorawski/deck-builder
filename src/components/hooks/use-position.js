@@ -3,7 +3,7 @@ import { useRef } from 'react';
 const getPosition = (domNode) => {
   const bounds = domNode.getBoundingClientRect();
   return {
-    x: bounds.x + bounds.width,
+    x: bounds.x,
     y: bounds.y,
   };
 };
