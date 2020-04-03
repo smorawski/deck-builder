@@ -12,6 +12,7 @@ import ResourceSelectors from '../../resources/resource-selectors';
 import {
   addCard as addCardAction,
   removeCard as removeCardAction,
+  setClassKey as setClassKeyAction,
 } from '../../state/deck/actions';
 import { cardsInDeckSelector } from '../../state/deck/selectors';
 import { filterSelector } from '../../state/filter/selectors';
@@ -27,9 +28,11 @@ const ClassDeck = ({
   cardsInDeck,
   addCard,
   removeCard,
+  setClassKey,
   filter,
 }) => {
   const { classKey } = useParams();
+  setClassKey(classKey);
   const [activeWindow, setActiveTab] = useState(TABS.ALL);
   const inactiveWindow = activeWindow === TABS.DECK ? TABS.ALL : TABS.DECK;
   const abilities = ResourcesProvider.getClassAbilities(classKey);
@@ -82,6 +85,7 @@ ClassDeck.propTypes = {
   cardsInDeck: PropTypes.arrayOf(PropTypes.string).isRequired,
   addCard: PropTypes.func.isRequired,
   removeCard: PropTypes.func.isRequired,
+  setClassKey: PropTypes.func.isRequired,
   filter: PropTypes.shape({
     levels: PropTypes.arrayOf(PropTypes.string),
     tags: PropTypes.arrayOf(PropTypes.string),
@@ -93,5 +97,5 @@ export default connect(
     cardsInDeck: cardsInDeckSelector(state),
     filter: filterSelector(state),
   }),
-  { addCard: addCardAction, removeCard: removeCardAction },
+  { addCard: addCardAction, removeCard: removeCardAction, setClassKey: setClassKeyAction },
 )(ClassDeck);
