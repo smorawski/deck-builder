@@ -10,7 +10,7 @@ import { classKeySelector, cardsInDeckSelector } from '../../../state/deck/selec
 
 import './export-deck.css';
 
-const createUrl = (hashedDeck) => `${window.location.origin}/import/${hashedDeck}`;
+const createUrl = (hashedDeck) => `${window.location.origin}/#/import/${hashedDeck}`;
 
 const ExportDeck = ({ cardsInDeck, classKey }) => {
   const [opened, setOpenModal] = useState(false);

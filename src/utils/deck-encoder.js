@@ -1,6 +1,5 @@
 export const decodeDeck = (string) => {
   try {
-    console.log(atob(string));
     const { classKey, deck } = JSON.parse(atob(string));
     return { classKey, deck };
   } catch (error) {
