@@ -11,6 +11,7 @@ export default {
     attacks: ['2'],
     tags: [
       TAGS.USE_ELEMENTS.DARKNESS,
+      TAGS.ACTIONS.KILL_ENEMY,
       TAGS.CLASSES.MINDTHIEF,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,

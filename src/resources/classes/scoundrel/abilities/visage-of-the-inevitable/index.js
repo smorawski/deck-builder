@@ -9,8 +9,9 @@ export default {
   level: LEVELS[5],
   top: {
     tags: [
-      TAGS.OTHER.XP,
+      TAGS.ACTIONS.KILL_ENEMY,
       TAGS.CLASSES.SCOUNDREL,
+      TAGS.OTHER.XP,
     ],
   },
   bottom: {

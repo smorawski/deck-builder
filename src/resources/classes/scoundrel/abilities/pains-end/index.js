@@ -17,7 +17,7 @@ export default {
   bottom: {
     moves: ['3'],
     tags: [
-      TAGS.CLASSES.SCOUNDREL,
+      TAGS.ACTIONS.KILL_ENEMY,
     ],
   },
 };

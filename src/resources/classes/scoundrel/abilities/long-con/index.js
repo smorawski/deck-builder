@@ -15,9 +15,9 @@ export default {
   },
   bottom: {
     tags: [
+      TAGS.ACTIONS.CONTROL_ENEMY,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
-      TAGS.CLASSES.SCOUNDREL,
     ],
   },
 };
