@@ -8,7 +8,6 @@ export default {
   image,
   level: LEVELS[4],
   top: {
-    attacks: ['4'],
     tags: [
       TAGS.OTHER.RANGED,
       TAGS.CLASSES.CRAGHEART,

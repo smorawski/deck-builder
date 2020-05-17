@@ -8,7 +8,6 @@ export default {
   image,
   level: LEVELS[6],
   top: {
-    attacks: ['4'],
     tags: [
       TAGS.ACTIONS.CREATE_TRAP,
       TAGS.EFFECTS.MUDDLE,

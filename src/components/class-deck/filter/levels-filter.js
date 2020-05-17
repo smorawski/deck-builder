@@ -8,6 +8,7 @@ import ResourcesProvider from '../../../resources/resource-provider';
 import {
   setLevelFilter as setLevelFilterAction,
   unsetLevelFilter as unsetLevelFilterAction,
+  clearLevelFilter as clearLevelFilterAction,
 } from '../../../state/filter/actions';
 import { filterLevelsSelector } from '../../../state/filter/selectors';
 
@@ -17,6 +18,7 @@ const TagsFilter = ({
   setLevelFilter,
   unsetLevelFilter,
   filterLevels,
+  clearLevelFilter,
 }) => (
   <ButtonGroup className="mr-2 filter levelsFilter">
     {
@@ -31,12 +33,17 @@ const TagsFilter = ({
         ),
       )
     }
+    <FilterLevel
+      name="All"
+      toggleFilter={clearLevelFilter}
+    />
   </ButtonGroup>
 );
 
 TagsFilter.propTypes = {
   setLevelFilter: PropTypes.func.isRequired,
   unsetLevelFilter: PropTypes.func.isRequired,
+  clearLevelFilter: PropTypes.func.isRequired,
   filterLevels: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
@@ -44,5 +51,9 @@ export default connect(
   (state) => ({
     filterLevels: filterLevelsSelector(state),
   }),
-  { setLevelFilter: setLevelFilterAction, unsetLevelFilter: unsetLevelFilterAction },
+  {
+    setLevelFilter: setLevelFilterAction,
+    unsetLevelFilter: unsetLevelFilterAction,
+    clearLevelFilter: clearLevelFilterAction,
+  },
 )(TagsFilter);

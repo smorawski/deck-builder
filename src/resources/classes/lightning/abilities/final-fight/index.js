@@ -9,6 +9,7 @@ export default {
   level: LEVELS[5],
   top: {
     tags: [
+      TAGS.ACTIONS.KILL_ENEMY,
       TAGS.OTHER.XP,
     ],
   },

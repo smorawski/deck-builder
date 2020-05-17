@@ -17,7 +17,6 @@ export default {
     ],
   },
   bottom: {
-    moves: ['2'],
     tags: [
       TAGS.CLASSES.CRAGHEART,
       TAGS.INCREASE_ELEMENTS.EARTH,

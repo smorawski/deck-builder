@@ -16,7 +16,6 @@ export default {
     ],
   },
   bottom: {
-    moves: ['2'],
     tags: [
       TAGS.DURATION.ONE_ROUND,
     ],

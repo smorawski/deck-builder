@@ -4,6 +4,7 @@ import classnames from 'classnames';
 
 import TagsFilter from './tags-filter';
 import LevelsFilter from './levels-filter';
+import SearchFilter from './search-filter';
 
 import './filters.css';
 
@@ -18,6 +19,7 @@ const Filters = ({ tags }) => {
       <div className={classnames('filters__content', showFilters && 'active')}>
         <TagsFilter tags={tags} />
         <LevelsFilter />
+        <SearchFilter />
       </div>
     </div>
   );

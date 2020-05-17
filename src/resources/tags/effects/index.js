@@ -10,6 +10,7 @@ import poison from './poison.svg';
 import retaliate from './retaliate.svg';
 import recover from './recover.svg';
 import refresh from './refresh.svg';
+import regenerate from './regenerate.svg';
 import shield from './shield.svg';
 import strengthen from './strengthen.svg';
 import stun from './stun.svg';
@@ -26,8 +27,9 @@ export const EFFECTS = {
   MUDDLE: 'muddle',
   PIERCE: 'pierce',
   POISON: 'poison',
-  REFRESH: 'refresh',
   RECOVER: 'recover',
+  REFRESH: 'refresh',
+  REGENERATE: 'regenerate',
   RETALIATE: 'retaliate',
   SHIELD: 'shield',
   STRENGTHEN: 'strengthen',
@@ -45,8 +47,9 @@ export const EFFECTS_IMAGES = {
   [EFFECTS.MUDDLE]: muddle,
   [EFFECTS.PIERCE]: pierce,
   [EFFECTS.POISON]: poison,
-  [EFFECTS.REFRESH]: refresh,
   [EFFECTS.RECOVER]: recover,
+  [EFFECTS.REFRESH]: refresh,
+  [EFFECTS.REGENERATE]: regenerate,
   [EFFECTS.RETALIATE]: retaliate,
   [EFFECTS.SHIELD]: shield,
   [EFFECTS.STRENGTHEN]: strengthen,

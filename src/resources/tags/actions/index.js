@@ -9,6 +9,7 @@ import move from './move.svg';
 import pull from './pull.svg';
 import push from './push.svg';
 import summon from './summon.svg';
+import teleport from './teleport.svg';
 import trap from './trap.svg';
 
 // actions
@@ -25,6 +26,7 @@ export const ACTIONS = {
   PULL: 'pull',
   PUSH: 'push',
   SUMMON: 'summon',
+  TELEPORT: 'teleport',
 };
 
 export const ACTIONS_IMAGES = {
@@ -40,4 +42,5 @@ export const ACTIONS_IMAGES = {
   [ACTIONS.PULL]: pull,
   [ACTIONS.PUSH]: push,
   [ACTIONS.SUMMON]: summon,
+  [ACTIONS.TELEPORT]: teleport,
 };

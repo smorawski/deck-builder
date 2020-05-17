@@ -16,7 +16,6 @@ export default {
     ],
   },
   bottom: {
-    moves: ['6'],
     attack: ['3'],
     tags: [
       TAGS.OTHER.XP,
