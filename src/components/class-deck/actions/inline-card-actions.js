@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 
 import { RemoveCard, PreviewCard } from './variants';
-import { removeCard as removeCardAction } from '../../../state/deck/actions';
+import useDeck from '../../hooks/use-deck';
 
-const InlineCardActionsRaw = ({ cardName, removeCard, image }) => (
-  <div className="inlineCard__actions">
-    <PreviewCard image={image} />
-    <RemoveCard onClick={() => removeCard(cardName)} />
-  </div>
-);
-
-InlineCardActionsRaw.propTypes = {
-  image: PropTypes.node,
-  cardName: PropTypes.string.isRequired,
-  removeCard: PropTypes.func.isRequired,
+const InlineCardActions = ({ cardName, image }) => {
+  const [, { removeCard }] = useDeck();
+  return (
+    <div className="inlineCard__actions">
+      <PreviewCard image={image} />
+      <RemoveCard onClick={() => removeCard(cardName)} />
+    </div>
+  );
 };
 
-InlineCardActionsRaw.defaultProps = {
+InlineCardActions.propTypes = {
+  image: PropTypes.node,
+  cardName: PropTypes.string.isRequired,
+};
+
+InlineCardActions.defaultProps = {
   image: null,
 };
 
-export default connect(null, { removeCard: removeCardAction })(InlineCardActionsRaw);
+export default InlineCardActions;

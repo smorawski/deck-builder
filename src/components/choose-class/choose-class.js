@@ -1,14 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import ChooseClassButton from './choose-class-button';
 import ResourcesProvider from '../../resources/resource-provider';
 
 const ChooseClass = () => (
   <div className="chooseClass">
-    <div className="chooseClass__importDeck">
-      <Link to="/import">Import</Link>
-    </div>
     <div className="chooseClass__header">Choose class:</div>
     <div className="chooseClass__content">
       {

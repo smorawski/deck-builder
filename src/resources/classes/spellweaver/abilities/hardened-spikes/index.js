@@ -4,7 +4,7 @@ import { LEVELS } from '../../../../other';
 
 export default {
   name: 'hardenedSpikes',
-  initiative: '26',
+  initiative: 26,
   image,
   level: LEVELS.X,
   top: {

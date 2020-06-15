@@ -7,14 +7,9 @@ import classnames from 'classnames';
 import MobileMenu from './mobile-menu';
 import CardsList from './lists/cards-list';
 import DeckList from './lists/deck-list';
+import useDeck from '../hooks/use-deck';
 import ResourcesProvider from '../../resources/resource-provider';
 import ResourceSelectors from '../../resources/resource-selectors';
-import {
-  addCard as addCardAction,
-  removeCard as removeCardAction,
-  setClassKey as setClassKeyAction,
-} from '../../state/deck/actions';
-import { cardsInDeckSelector } from '../../state/deck/selectors';
 import { filterSelector } from '../../state/filter/selectors';
 
 import './class-deck.css';
@@ -25,14 +20,10 @@ const TABS = {
 };
 
 const ClassDeck = ({
-  cardsInDeck,
-  addCard,
-  removeCard,
-  setClassKey,
   filter,
 }) => {
   const { classKey } = useParams();
-  setClassKey(classKey);
+  const [deck, { addCard, removeCard }] = useDeck();
   const [activeWindow, setActiveTab] = useState(TABS.ALL);
   const inactiveWindow = activeWindow === TABS.DECK ? TABS.ALL : TABS.DECK;
   const abilities = ResourcesProvider.getClassAbilities(classKey);
@@ -45,7 +36,7 @@ const ClassDeck = ({
       <MobileMenu
         onClick={() => setActiveTab(inactiveWindow)}
         maxCards={handSize}
-        currentCards={cardsInDeck.length}
+        currentCards={deck.length}
         label={inactiveWindow}
       />
       <div className={
@@ -57,7 +48,7 @@ const ClassDeck = ({
       >
         <DeckList
           abilities={
-            cardsInDeck.map((abilityName) => abilities.find(({ name }) => abilityName === name))
+            deck.map((abilityName) => abilities.find(({ name }) => abilityName === name))
           }
           onDrop={addCard}
           maxCards={handSize}
@@ -82,10 +73,6 @@ const ClassDeck = ({
 };
 
 ClassDeck.propTypes = {
-  cardsInDeck: PropTypes.arrayOf(PropTypes.string).isRequired,
-  addCard: PropTypes.func.isRequired,
-  removeCard: PropTypes.func.isRequired,
-  setClassKey: PropTypes.func.isRequired,
   filter: PropTypes.shape({
     levels: PropTypes.arrayOf(PropTypes.string),
     tags: PropTypes.arrayOf(PropTypes.string),
@@ -94,8 +81,6 @@ ClassDeck.propTypes = {
 
 export default connect(
   (state) => ({
-    cardsInDeck: cardsInDeckSelector(state),
     filter: filterSelector(state),
   }),
-  { addCard: addCardAction, removeCard: removeCardAction, setClassKey: setClassKeyAction },
 )(ClassDeck);

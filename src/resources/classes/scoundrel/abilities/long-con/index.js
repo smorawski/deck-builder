@@ -8,7 +8,7 @@ export default {
   image,
   level: LEVELS[9],
   top: {
-    attacks: [4],
+    attacks: ['4'],
     tags: [
       TAGS.EFFECTS.DISARM,
     ],
