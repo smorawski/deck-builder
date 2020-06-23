@@ -7,6 +7,7 @@ import mindthief from './mindthief';
 import scoundrel from './scoundrel';
 import spellweaver from './spellweaver';
 import tinkerer from './tinkerer';
+import triangle from './triangle';
 import twoMini from './two-mini';
 import musicNote from './music-note';
 import lightning from './lightning';
@@ -22,6 +23,7 @@ export const CLASSES_OBJECT = {
   [CLASSES.SCOUNDREL]: scoundrel,
   [CLASSES.SPELLWEAVER]: spellweaver,
   [CLASSES.TINKERER]: tinkerer,
+  [CLASSES.TRIANGLE]: triangle,
   [CLASSES.TWO_MINI]: twoMini,
   [CLASSES.MUSIC_NOTE]: musicNote,
   [CLASSES.LIGHTNING]: lightning,
