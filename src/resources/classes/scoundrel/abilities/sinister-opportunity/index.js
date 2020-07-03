@@ -17,5 +17,8 @@ export default {
   },
   bottom: {
     moves: ['3'],
+    tags: [
+      TAGS.ACTIONS.CONTROL_ENEMY,
+    ],
   },
 };

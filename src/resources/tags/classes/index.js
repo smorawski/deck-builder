@@ -2,6 +2,7 @@ import brute from './brute.svg';
 import circles from './circles.svg';
 import cragheart from './cragheart.svg';
 import cthulhu from './cthulhu.svg';
+import diviner from './diviner.svg';
 import lightning from './lightning.svg';
 import mindthief from './mindthief.svg';
 import moon from './moon.svg';
@@ -21,6 +22,7 @@ export const CLASSES = {
   CIRCLES: 'circles',
   CRAGHEART: 'cragheart',
   CTHULHU: 'cthulhu',
+  DIVINER: 'diviner',
   LIGHTNING: 'lightning',
   MINDTHIEF: 'mindthief',
   MOON: 'moon',
@@ -34,7 +36,6 @@ export const CLASSES = {
   TRIANGLE: 'triangle',
   TRIPLE_ARROW: 'tripleArrow',
   TWO_MINI: 'twoMini',
-  // DIVINER: 'diviner',
 };
 
 export const CLASSES_IMAGES = {
@@ -42,6 +43,7 @@ export const CLASSES_IMAGES = {
   [CLASSES.CIRCLES]: circles,
   [CLASSES.CRAGHEART]: cragheart,
   [CLASSES.CTHULHU]: cthulhu,
+  [CLASSES.DIVINER]: diviner,
   [CLASSES.LIGHTNING]: lightning,
   [CLASSES.MINDTHIEF]: mindthief,
   [CLASSES.MOON]: moon,

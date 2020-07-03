@@ -8,6 +8,8 @@ import {
   CLEAR_TAG_FILTER,
   SET_LEVEL_FILTER,
   UNSET_LEVEL_FILTER,
+  CLEAR_LEVEL_FILTER,
+  SET_SEARCH_FILTER,
 } from './actions';
 
 const initialState = {
@@ -33,8 +35,16 @@ export default createReducer(initialState, {
     ...state,
     levels: _uniq([...state.levels, level]),
   }),
-  [UNSET_LEVEL_FILTER]: (state, { payload: level }) => console.log(level) || ({
+  [UNSET_LEVEL_FILTER]: (state, { payload: level }) => ({
     ...state,
     levels: _without(state.levels, level),
+  }),
+  [CLEAR_LEVEL_FILTER]: (state) => ({
+    ...state,
+    levels: [],
+  }),
+  [SET_SEARCH_FILTER]: (state, { payload: search }) => ({
+    ...state,
+    search,
   }),
 });

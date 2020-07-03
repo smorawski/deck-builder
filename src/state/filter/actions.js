@@ -31,3 +31,23 @@ export const unsetLevelFilter = (level) => ({
   type: UNSET_LEVEL_FILTER,
   payload: level,
 });
+
+export const CLEAR_LEVEL_FILTER = 'CLEAR_LEVEL_FILTER';
+
+export const clearLevelFilter = () => ({
+  type: CLEAR_LEVEL_FILTER,
+});
+
+export const SET_SEARCH_FILTER = 'SET_SEARCH_FILTER';
+
+export const setSearchFilter = (term) => ({
+  type: SET_SEARCH_FILTER,
+  payload: term,
+});
+
+export const CLEAR_SEARCH_FILTER = 'CLEAR_SEARCH_FILTER';
+
+export const clearSearchFilter = () => ({
+  type: SET_SEARCH_FILTER,
+  payload: '',
+});

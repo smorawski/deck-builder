@@ -18,3 +18,20 @@ export const clearDeck = (cardName) => ({
   type: CLEAR_DECK,
   payload: cardName,
 });
+
+export const IMPORT_DECK = 'IMPORT_DECK';
+
+export const importDeck = (classKey, deck) => ({
+  type: IMPORT_DECK,
+  payload: {
+    deck,
+    classKey,
+  },
+});
+
+export const SET_CLASS_KEY = 'SET_CLASS_KEY';
+
+export const setClassKey = (classKey) => ({
+  type: SET_CLASS_KEY,
+  payload: classKey,
+});

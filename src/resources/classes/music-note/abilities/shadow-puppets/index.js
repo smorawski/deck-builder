@@ -10,11 +10,11 @@ export default {
   top: {
     moves: ['4'],
     tags: [
+      TAGS.ACTIONS.CONTROL_ENEMY,
       TAGS.EFFECTS.JUMP,
     ],
   },
   bottom: {
-    attacks: ['4'],
     tags: [
       TAGS.OTHER.RANGED,
     ],

@@ -59,8 +59,17 @@ export default class ResourceSelectors {
     });
   }
 
-  static filterAbilities(abilities, { tags, levels }) {
-    const abilitiesWithProperLevel = ResourceSelectors.filterAbilitiesByLevel(abilities, levels);
-    return ResourceSelectors.filterAbilitiesByTag(abilitiesWithProperLevel, tags);
+  static filterAbilitiesBySearchTerm(abilities, search) {
+    const searchTermReg = new RegExp(search.split(' ').join('').toLowerCase());
+    return abilities.filter(({ name }) => searchTermReg.test(name.toLowerCase()));
+  }
+
+  static filterAbilities(abilities, { tags, levels, search }) {
+    const abilitiesWithProperLevel = ResourceSelectors
+      .filterAbilitiesByLevel(abilities, levels);
+    const abilitiesWithTags = ResourceSelectors
+      .filterAbilitiesByTag(abilitiesWithProperLevel, tags);
+    return ResourceSelectors
+      .filterAbilitiesBySearchTerm(abilitiesWithTags, search);
   }
 }

@@ -5,8 +5,8 @@ import ResourcesProvider from '../../resources/resource-provider';
 
 const ChooseClass = () => (
   <div className="chooseClass">
-    <div className="chooseClass--header">Choose class:</div>
-    <div className="chooseClass--content">
+    <div className="chooseClass__header">Choose class:</div>
+    <div className="chooseClass__content">
       {
         ResourcesProvider.getAllClasses().map(({ name, image }) => (
           <ChooseClassButton
