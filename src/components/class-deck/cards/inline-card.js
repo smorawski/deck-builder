@@ -2,7 +2,7 @@ import React from 'react';
 import BootstrapCard from 'react-bootstrap/Card';
 
 import Tags from '../tags';
-import { InlineCardActions } from '../actions';
+import CardActions from '../actions';
 import { abilityPropType } from '../../../constants/prop-types';
 
 import './inline-card.css';
@@ -21,7 +21,7 @@ const InlineCard = ({ ability }) => (
         <Tags tags={Object.values(ability.top.tags || [])} />
         <Tags tags={Object.values(ability.bottom.tags || [])} />
       </span>
-      <InlineCardActions cardName={ability.name} image={ability.image} />
+      <CardActions cardName={ability.name} image={ability.image} />
     </div>
   </BootstrapCard>
 );

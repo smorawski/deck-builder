@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -11,6 +11,7 @@ import useDeck from '../hooks/use-deck';
 import ResourcesProvider from '../../resources/resource-provider';
 import ResourceSelectors from '../../resources/resource-selectors';
 import { filterSelector } from '../../state/filter/selectors';
+import { clearTagFilter as clearTagFilterAction } from '../../state/filter/actions';
 
 import './class-deck.css';
 
@@ -21,10 +22,16 @@ const TABS = {
 
 const ClassDeck = ({
   filter,
+  clearTagFilter,
 }) => {
   const { classKey } = useParams();
   const [deck, { addCard, removeCard }] = useDeck();
   const [activeWindow, setActiveTab] = useState(TABS.ALL);
+  useEffect(
+    () => { clearTagFilter(); },
+    [classKey, clearTagFilter],
+  );
+
   const inactiveWindow = activeWindow === TABS.DECK ? TABS.ALL : TABS.DECK;
   const abilities = ResourcesProvider.getClassAbilities(classKey);
   const filteredAbilities = ResourceSelectors.filterAbilities(abilities, filter);
@@ -77,10 +84,12 @@ ClassDeck.propTypes = {
     levels: PropTypes.arrayOf(PropTypes.string),
     tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
+  clearTagFilter: PropTypes.func.isRequired,
 };
 
 export default connect(
   (state) => ({
     filter: filterSelector(state),
   }),
+  { clearTagFilter: clearTagFilterAction },
 )(ClassDeck);
