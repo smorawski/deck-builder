@@ -13,7 +13,7 @@ const InlineCard = ({ ability }) => (
     className="inlineCard"
   >
     <BootstrapCard.Header className="inlineCard__header">
-      <span>{ ability.name }</span>
+      <span>{ `${ability.name} ( ${ability.level} )`}</span>
       <span>{ ability.initiative}</span>
     </BootstrapCard.Header>
     <div className="inlineCard__content">

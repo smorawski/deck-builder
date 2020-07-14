@@ -38,12 +38,15 @@ const ClassDeck = ({
   const tags = ResourceSelectors.selectAbilitiesTags(abilities);
   const handSize = ResourcesProvider.getClassHandSize(classKey);
   const filteredAbilitiesTags = ResourceSelectors.selectAbilitiesTags(filteredAbilities, tags);
+  const deckAbilities = deck.map(
+    (abilityName) => abilities.find(({ name }) => abilityName === name),
+  );
   return (
     <div className="classDeck">
       <MobileMenu
         onClick={() => setActiveTab(inactiveWindow)}
         maxCards={handSize}
-        currentCards={deck.length}
+        abilities={deckAbilities}
         label={inactiveWindow}
       />
       <div className={
@@ -54,9 +57,7 @@ const ClassDeck = ({
       }
       >
         <DeckList
-          abilities={
-            deck.map((abilityName) => abilities.find(({ name }) => abilityName === name))
-          }
+          abilities={deckAbilities}
           onDrop={addCard}
           maxCards={handSize}
         />
