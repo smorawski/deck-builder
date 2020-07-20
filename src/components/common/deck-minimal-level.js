@@ -11,7 +11,7 @@ const DeckMinimalLevel = ({ levels }) => {
 
   return (
     <span className={classnames('deckMinimalLevel', minimalLevel > 9 && 'deckMinimalLevel--incorrect')}>
-      Min. level:
+      Min. level:&nbsp;
       { minimalLevel }
     </span>
   );

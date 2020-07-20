@@ -1,5 +1,6 @@
 import React from 'react';
 import BootstrapCard from 'react-bootstrap/Card';
+import ResourceSelectors from '../../../resources/resource-selectors';
 
 import Tags from '../tags';
 import CardActions from '../actions';
@@ -18,8 +19,8 @@ const InlineCard = ({ ability }) => (
     </BootstrapCard.Header>
     <div className="inlineCard__content">
       <span>
-        <Tags tags={Object.values(ability.top.tags || [])} />
-        <Tags tags={Object.values(ability.bottom.tags || [])} />
+        <Tags tags={ResourceSelectors.selectPartialAbilityTags(ability.top)} />
+        <Tags tags={ResourceSelectors.selectPartialAbilityTags(ability.bottom)} />
       </span>
       <CardActions cardName={ability.name} image={ability.image} />
     </div>
