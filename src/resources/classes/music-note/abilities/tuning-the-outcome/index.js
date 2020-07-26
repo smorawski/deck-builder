@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.EFFECTS.BLESS,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

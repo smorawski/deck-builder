@@ -10,14 +10,17 @@ export default {
   top: {
     tags: [
       TAGS.ACTIONS.LOOT,
-      TAGS.OTHER.LOST,
+      TAGS.ACTIONS.HEAL,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
+      TAGS.OTHER.LOST,
     ],
   },
   bottom: {
     moves: ['4'],
     tags: [
       TAGS.CLASSES.SAW,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.OTHER.XP,
     ],
   },

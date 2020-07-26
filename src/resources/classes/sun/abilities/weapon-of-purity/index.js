@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.USE_ELEMENTS.LIGHT,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,

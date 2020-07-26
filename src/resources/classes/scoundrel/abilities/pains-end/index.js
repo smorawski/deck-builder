@@ -18,6 +18,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.ACTIONS.KILL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

@@ -10,6 +10,8 @@ export default {
   top: {
     attacks: ['3'],
     tags: [
+      TAGS.TARGETS.ADJACENT_ENEMY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.USE_ELEMENTS.EARTH,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

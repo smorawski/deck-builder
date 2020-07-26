@@ -11,6 +11,7 @@ export default {
     attacks: ['1'],
     tags: [
       TAGS.CLASSES.MINDTHIEF,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
     ],

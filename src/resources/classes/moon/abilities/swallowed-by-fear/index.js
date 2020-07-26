@@ -20,6 +20,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.ACTIONS.PUSH,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

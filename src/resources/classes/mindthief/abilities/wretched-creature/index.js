@@ -20,6 +20,7 @@ export default {
     tags: [
       TAGS.USE_ELEMENTS.DARKNESS,
       TAGS.EFFECTS.CURSE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

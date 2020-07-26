@@ -9,6 +9,7 @@ export default {
   level: LEVELS[1],
   top: {
     tags: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,

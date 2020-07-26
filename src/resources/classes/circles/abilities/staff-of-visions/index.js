@@ -20,6 +20,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.EFFECTS.STRENGTHEN,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

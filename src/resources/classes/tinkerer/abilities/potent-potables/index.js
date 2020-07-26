@@ -9,7 +9,7 @@ export default {
   level: LEVELS.X,
   top: {
     tags: [
-      TAGS.ACTIONS.HEAL,
+      TAGS.EFFECTS.INCREASE_HEAL,
       TAGS.DURATION.USES,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

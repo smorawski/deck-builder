@@ -8,8 +8,8 @@ export default {
   image,
   level: LEVELS[5],
   top: {
-    attacks: ['2/2/2'],
-    moves: ['2/2'],
+    attacks: ['2', '2', '2'],
+    moves: ['2', '2'],
     tags: [
       TAGS.CLASSES.TWO_MINI,
       TAGS.OTHER.XP,

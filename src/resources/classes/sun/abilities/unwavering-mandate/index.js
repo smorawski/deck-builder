@@ -9,6 +9,7 @@ export default {
   level: LEVELS[2],
   top: {
     tags: [
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],

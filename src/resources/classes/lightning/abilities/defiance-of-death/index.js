@@ -11,6 +11,7 @@ export default {
     attacks: ['3'],
     tags: [
       TAGS.CLASSES.LIGHTNING,
+      TAGS.EFFECTS.INCREASE_ATTACK,
     ],
   },
   bottom: {

@@ -16,6 +16,7 @@ export default {
   bottom: {
     tags: [
       TAGS.ACTIONS.HEAL,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

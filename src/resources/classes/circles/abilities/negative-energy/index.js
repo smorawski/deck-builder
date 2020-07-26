@@ -18,6 +18,7 @@ export default {
   bottom: {
     tags: [
       TAGS.EFFECTS.CURSE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.INCREASE_ELEMENTS.DARKNESS,
     ],

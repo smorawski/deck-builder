@@ -9,6 +9,7 @@ export default {
   level: LEVELS[9],
   top: {
     tags: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.EFFECTS.WOUND,
       TAGS.OTHER.XP,
       TAGS.DURATION.USES,

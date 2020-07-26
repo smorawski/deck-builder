@@ -8,7 +8,7 @@ export default {
   image,
   level: LEVELS[9],
   top: {
-    attacks: ['3/4'],
+    attacks: ['3'],
     tags: [
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,

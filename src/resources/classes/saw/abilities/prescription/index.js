@@ -10,12 +10,16 @@ export default {
   top: {
     tags: [
       TAGS.CLASSES.SAW,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
     ],
   },
   bottom: {
     tags: [
       TAGS.CLASSES.SAW,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],

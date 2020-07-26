@@ -9,7 +9,7 @@ export default {
   level: LEVELS.X,
   top: {
     tags: [
-      TAGS.ACTIONS.SUMMON,
+      TAGS.ACTIONS.CONTROL_SUMMON,
       TAGS.EFFECTS.RETALIATE,
       TAGS.EFFECTS.WOUND,
       TAGS.OTHER.XP,
@@ -20,6 +20,7 @@ export default {
   bottom: {
     tags: [
       TAGS.CLASSES.SPIKEY_HEAD,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.PERMANENT,
     ],
   },

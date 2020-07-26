@@ -22,6 +22,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.EFFECTS.RETALIATE,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.USE_ELEMENTS.LIGHT,
       TAGS.USE_ELEMENTS.ANY,
       TAGS.OTHER.XP,

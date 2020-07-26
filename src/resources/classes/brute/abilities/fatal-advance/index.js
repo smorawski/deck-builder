@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.ACTIONS.KILL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],

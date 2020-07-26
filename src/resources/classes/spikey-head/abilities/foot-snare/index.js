@@ -17,6 +17,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.EFFECTS.IMMOBILIZE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

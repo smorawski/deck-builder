@@ -16,6 +16,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.EFFECTS.POISON,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

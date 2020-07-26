@@ -11,6 +11,8 @@ export default {
     moves: ['3'],
     attacks: ['4'],
     tags: [
+      TAGS.EFFECTS.WOUND,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.ACTIONS.PUSH,
       TAGS.EFFECTS.IMMOBILIZE,
     ],

@@ -18,6 +18,8 @@ export default {
   bottom: {
     tags: [
       TAGS.EFFECTS.SHIELD,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.DURATION.ONE_ROUND,
     ],
   },

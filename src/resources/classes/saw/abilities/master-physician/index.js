@@ -17,7 +17,7 @@ export default {
   },
   bottom: {
     tags: [
-      TAGS.ACTIONS.HEAL,
+      TAGS.EFFECTS.INCREASE_HEAL,
       TAGS.DURATION.ONE_ROUND,
     ],
   },

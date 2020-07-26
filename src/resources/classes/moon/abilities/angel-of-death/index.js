@@ -10,9 +10,10 @@ export default {
   top: {
     attacks: ['4'],
     tags: [
-      TAGS.TARGETS.MULTIPLE,
       TAGS.USE_ELEMENTS.DARKNESS,
       TAGS.ACTIONS.KILL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],
@@ -23,6 +24,7 @@ export default {
       TAGS.EFFECTS.JUMP,
       TAGS.USE_ELEMENTS.DARKNESS,
       TAGS.ACTIONS.KILL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.OTHER.XP,
     ],
   },

@@ -16,6 +16,9 @@ export default {
   },
   bottom: {
     tags: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.DURATION.ONE_ROUND,
     ],
   },

@@ -24,8 +24,10 @@ export const CLASSES_OBJECT = {
   [CLASSES.CRAGHEART]: cragheart,
   [CLASSES.CTHULHU]: cthulhu,
   [CLASSES.DIVINER]: diviner,
+  [CLASSES.LIGHTNING]: lightning,
   [CLASSES.MINDTHIEF]: mindthief,
   [CLASSES.MOON]: moon,
+  [CLASSES.MUSIC_NOTE]: musicNote,
   [CLASSES.SAW]: saw,
   [CLASSES.SCOUNDREL]: scoundrel,
   [CLASSES.SPELLWEAVER]: spellweaver,
@@ -35,6 +37,4 @@ export const CLASSES_OBJECT = {
   [CLASSES.TRIANGLE]: triangle,
   [CLASSES.TRIPLE_ARROW]: tripleArrow,
   [CLASSES.TWO_MINI]: twoMini,
-  [CLASSES.MUSIC_NOTE]: musicNote,
-  [CLASSES.LIGHTNING]: lightning,
 };

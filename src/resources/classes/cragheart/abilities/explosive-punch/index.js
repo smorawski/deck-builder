@@ -11,6 +11,7 @@ export default {
     attacks: ['4'],
     tags: [
       TAGS.CLASSES.CRAGHEART,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.INCREASE_ELEMENTS.EARTH,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

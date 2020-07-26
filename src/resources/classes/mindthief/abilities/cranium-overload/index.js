@@ -11,6 +11,7 @@ export default {
     attacks: ['2'],
     tags: [
       TAGS.ACTIONS.KILL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

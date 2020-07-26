@@ -10,6 +10,8 @@ export default {
   top: {
     tags: [
       TAGS.ACTIONS.CREATE_TRAP,
+      TAGS.TARGETS.ADJACENT_ENEMY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],
@@ -17,6 +19,7 @@ export default {
   bottom: {
     tags: [
       TAGS.CLASSES.SPIKEY_HEAD,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.DURATION.PERMANENT,
     ],
   },

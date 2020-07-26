@@ -20,6 +20,7 @@ export default {
   bottom: {
     tags: [
       TAGS.CLASSES.SPIKEY_HEAD,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.PERMANENT,
     ],
   },

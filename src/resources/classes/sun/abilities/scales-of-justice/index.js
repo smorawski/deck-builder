@@ -21,6 +21,7 @@ export default {
       TAGS.USE_ELEMENTS.LIGHT,
       TAGS.OTHER.XP,
       TAGS.EFFECTS.STUN,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

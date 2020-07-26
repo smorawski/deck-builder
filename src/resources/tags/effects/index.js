@@ -15,6 +15,9 @@ import shield from './shield.svg';
 import strengthen from './strengthen.svg';
 import stun from './stun.svg';
 import wound from './wound.svg';
+import increaseAttack from './increase-attack.svg';
+import increaseHeal from './increase-heal.svg';
+import increaseMove from './increase-move.svg';
 
 // effects
 export const EFFECTS = {
@@ -23,6 +26,9 @@ export const EFFECTS = {
   DISARM: 'disarm',
   IMMOBILIZE: 'immobilize',
   INVISIBLE: 'invisible',
+  INCREASE_ATTACK: 'increaseAttack',
+  INCREASE_HEAL: 'increaseHeal',
+  INCREASE_MOVE: 'increaseMove',
   JUMP: 'jump',
   MUDDLE: 'muddle',
   PIERCE: 'pierce',
@@ -43,6 +49,9 @@ export const EFFECTS_IMAGES = {
   [EFFECTS.DISARM]: disarm,
   [EFFECTS.IMMOBILIZE]: immobilize,
   [EFFECTS.INVISIBLE]: invisible,
+  [EFFECTS.INCREASE_ATTACK]: increaseAttack,
+  [EFFECTS.INCREASE_HEAL]: increaseHeal,
+  [EFFECTS.INCREASE_MOVE]: increaseMove,
   [EFFECTS.JUMP]: jump,
   [EFFECTS.MUDDLE]: muddle,
   [EFFECTS.PIERCE]: pierce,

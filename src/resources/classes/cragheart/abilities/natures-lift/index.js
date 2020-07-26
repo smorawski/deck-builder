@@ -17,8 +17,10 @@ export default {
   bottom: {
     tags: [
       TAGS.USE_ELEMENTS.AIR,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.USES,
+      TAGS.OTHER.LOST,
     ],
   },
 };

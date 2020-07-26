@@ -10,6 +10,9 @@ export default {
   top: {
     tags: [
       TAGS.ACTIONS.SUMMON,
+      TAGS.EFFECTS.INCREASE_ATTACK,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],

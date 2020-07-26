@@ -10,6 +10,8 @@ export default {
   top: {
     tags: [
       TAGS.EFFECTS.RETALIATE,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
       TAGS.USE_ELEMENTS.EARTH,
       TAGS.DURATION.ONE_ROUND,
       TAGS.OTHER.XP,

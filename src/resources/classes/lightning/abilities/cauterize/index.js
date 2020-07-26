@@ -18,7 +18,7 @@ export default {
   },
   bottom: {
     tags: [
-      TAGS.EFFECTS.HEAL,
+      TAGS.EFFECTS.INCREASE_HEAL,
       TAGS.DURATION.USES,
       TAGS.OTHER.XP,
     ],

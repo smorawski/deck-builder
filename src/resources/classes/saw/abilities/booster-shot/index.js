@@ -16,6 +16,7 @@ export default {
   bottom: {
     tags: [
       TAGS.OTHER.XP,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.EFFECTS.SHIELD,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,

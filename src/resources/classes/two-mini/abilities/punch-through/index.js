@@ -19,6 +19,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.CLASSES.TWO_MINI,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.ONE_ROUND,
     ],
   },

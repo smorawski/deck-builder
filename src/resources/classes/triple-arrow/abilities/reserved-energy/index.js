@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.EFFECTS.REFRESH,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.OTHER.XP,
     ],
   },

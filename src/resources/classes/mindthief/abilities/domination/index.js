@@ -11,6 +11,7 @@ export default {
     attacks: ['4'],
     tags: [
       TAGS.CLASSES.MINDTHIEF,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.OTHER.XP,
     ],
   },

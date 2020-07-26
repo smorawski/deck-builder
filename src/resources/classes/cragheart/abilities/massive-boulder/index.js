@@ -11,6 +11,7 @@ export default {
     attacks: ['3'],
     tags: [
       TAGS.OTHER.RANGED,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.INCREASE_ELEMENTS.EARTH,
     ],
   },

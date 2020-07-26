@@ -18,6 +18,7 @@ export default {
     moves: ['5'],
     tags: [
       TAGS.EFFECTS.WOUND,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

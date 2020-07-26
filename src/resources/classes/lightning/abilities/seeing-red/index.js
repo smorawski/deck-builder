@@ -20,6 +20,7 @@ export default {
     moves: ['4'],
     tags: [
       TAGS.CLASSES.LIGHTNING,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,

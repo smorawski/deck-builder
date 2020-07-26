@@ -12,6 +12,7 @@ export default {
     tags: [
       TAGS.OTHER.RANGED,
       TAGS.EFFECTS.POISON,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.OTHER.XP,
     ],
   },

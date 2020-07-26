@@ -18,6 +18,7 @@ export default {
   bottom: {
     tags: [
       TAGS.USE_ELEMENTS.ANY,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,

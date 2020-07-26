@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.ACTIONS.HEAL,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.INCREASE_ELEMENTS.LIGHT,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

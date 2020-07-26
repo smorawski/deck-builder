@@ -9,12 +9,14 @@ export default {
   level: LEVELS[6],
   top: {
     tags: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.ONE_ROUND,
     ],
   },
   bottom: {
     tags: [
+      TAGS.EFFECTS.INCREASE_MOVE,
       TAGS.DURATION.ONE_ROUND,
     ],
   },

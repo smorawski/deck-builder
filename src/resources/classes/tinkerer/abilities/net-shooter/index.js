@@ -21,6 +21,7 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.IMMOBILIZE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

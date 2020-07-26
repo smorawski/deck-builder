@@ -19,6 +19,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.CLASSES.LIGHTNING,
+      TAGS.EFFECTS.INCREASE_MOVE,
       TAGS.USE_ELEMENTS.FIRE,
       TAGS.OTHER.XP,
     ],

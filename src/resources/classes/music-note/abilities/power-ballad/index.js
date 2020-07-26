@@ -9,6 +9,7 @@ export default {
   level: LEVELS[1],
   top: {
     tags: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
       TAGS.CLASSES.MUSIC_NOTE,
@@ -18,6 +19,7 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.STRENGTHEN,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
     ],

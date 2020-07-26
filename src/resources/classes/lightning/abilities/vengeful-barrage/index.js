@@ -17,6 +17,7 @@ export default {
     moves: ['4'],
     tags: [
       TAGS.USE_ELEMENTS.FIRE,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.ONE_ROUND,
     ],

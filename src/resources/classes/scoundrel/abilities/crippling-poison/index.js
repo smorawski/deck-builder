@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.EFFECTS.POISON,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,
     ],
