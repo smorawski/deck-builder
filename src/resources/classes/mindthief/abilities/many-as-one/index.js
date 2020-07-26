@@ -18,6 +18,7 @@ export default {
   bottom: {
     tags: [
       TAGS.OTHER.RANGED,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.ONE_ROUND,
       TAGS.OTHER.LOST,

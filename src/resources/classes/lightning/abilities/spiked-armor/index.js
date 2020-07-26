@@ -18,6 +18,7 @@ export default {
     moves: ['2'],
     attacks: ['2'],
     tags: [
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

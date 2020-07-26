@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.EFFECTS.SHIELD,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.DURATION.ONE_ROUND,
     ],
   },

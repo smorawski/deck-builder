@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.ACTIONS.KILL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.CLASSES.SCOUNDREL,
       TAGS.OTHER.XP,
     ],
@@ -18,6 +19,8 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.POISON,
+      TAGS.TARGETS.ADJACENT_ENEMY,
+      TAGS.TARGETS.MULTIPLE,
     ],
   },
 };

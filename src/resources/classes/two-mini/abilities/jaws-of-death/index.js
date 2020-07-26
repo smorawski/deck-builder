@@ -11,11 +11,12 @@ export default {
     tags: [
       TAGS.CLASSES.TWO_MINI,
       TAGS.ACTIONS.KILL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.OTHER.XP,
     ],
   },
   bottom: {
-    attacks: ['2/2'],
+    attacks: ['2', '2'],
     moves: ['3'],
     tags: [
       TAGS.CLASSES.TWO_MINI,

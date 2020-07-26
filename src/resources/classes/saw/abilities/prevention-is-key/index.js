@@ -10,12 +10,14 @@ export default {
   top: {
     tags: [
       TAGS.EFFECTS.DISARM,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },
   bottom: {
     tags: [
       TAGS.EFFECTS.SHIELD,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.DURATION.ONE_ROUND,

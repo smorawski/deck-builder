@@ -10,11 +10,15 @@ export default {
   top: {
     tags: [
       TAGS.EFFECTS.RECOVER,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.USE_ELEMENTS.LIGHT,
       TAGS.OTHER.XP,
     ],
   },
   bottom: {
     attacks: ['4'],
+    tags: [
+      TAGS.TARGETS.ADJACENT_ALLY,
+    ],
   },
 };

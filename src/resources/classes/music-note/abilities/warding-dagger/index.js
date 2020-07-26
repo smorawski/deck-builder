@@ -11,12 +11,14 @@ export default {
     attacks: ['3'],
     tags: [
       TAGS.EFFECTS.IMMOBILIZE,
+      TAGS.TARGETS.ADJACENT_ALLY,
     ],
   },
   bottom: {
     moves: ['4'],
     tags: [
       TAGS.EFFECTS.SHIELD,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.DURATION.ONE_ROUND,

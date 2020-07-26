@@ -11,12 +11,14 @@ export default {
     attacks: ['4'],
     tags: [
       TAGS.OTHER.RANGED,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
   bottom: {
     moves: ['4'],
     tags: [
       TAGS.INCREASE_ELEMENTS.EARTH,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

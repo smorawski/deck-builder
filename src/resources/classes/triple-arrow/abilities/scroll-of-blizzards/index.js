@@ -19,6 +19,7 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.IMMOBILIZE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.INCREASE_ELEMENTS.DARKNESS,
     ],

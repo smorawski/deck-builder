@@ -16,5 +16,8 @@ export default {
   },
   bottom: {
     moves: ['3'],
+    tags: [
+      TAGS.TARGETS.ADJACENT_ALLY,
+    ],
   },
 };

@@ -15,6 +15,7 @@ export default {
   bottom: {
     tags: [
       TAGS.EFFECTS.REFRESH,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,

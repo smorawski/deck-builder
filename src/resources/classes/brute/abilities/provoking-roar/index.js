@@ -16,6 +16,7 @@ export default {
   bottom: {
     tags: [
       TAGS.CLASSES.BRUTE,
+      TAGS.TARGETS.ADJACENT_ALLY,
     ],
   },
 };

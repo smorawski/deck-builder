@@ -21,6 +21,7 @@ export default {
     tags: [
       TAGS.EFFECTS.IMMOBILIZE,
       TAGS.ACTIONS.PUSH,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

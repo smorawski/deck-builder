@@ -16,6 +16,7 @@ export default {
   },
   bottom: {
     tags: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.EFFECTS.RETALIATE,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,

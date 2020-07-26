@@ -18,6 +18,7 @@ export default {
   bottom: {
     tags: [
       TAGS.EFFECTS.RECOVER,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.OTHER.XP,
       TAGS.USE_ELEMENTS.LIGHT,
       TAGS.OTHER.LOST,

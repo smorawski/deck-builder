@@ -11,11 +11,15 @@ export default {
     attacks: ['5'],
     tags: [
       TAGS.EFFECTS.STRENGTHEN,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
     ],
   },
   bottom: {
     attacks: ['6'],
+    tags: [
+      TAGS.TARGETS.ADJACENT_ALLY,
+    ],
   },
 };

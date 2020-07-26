@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.USE_ELEMENTS.AIR,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.USES,
       TAGS.OTHER.LOST,
       TAGS.OTHER.XP,

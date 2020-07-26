@@ -19,6 +19,7 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.DISARM,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

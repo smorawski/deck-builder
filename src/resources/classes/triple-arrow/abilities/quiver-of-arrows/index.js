@@ -9,6 +9,7 @@ export default {
   level: LEVELS[6],
   top: {
     tags: [
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.RANGED,
       TAGS.OTHER.XP,

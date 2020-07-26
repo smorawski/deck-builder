@@ -20,6 +20,7 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.BLESS,
+      TAGS.TARGETS.ADJACENT_ALLY,
     ],
   },
 };

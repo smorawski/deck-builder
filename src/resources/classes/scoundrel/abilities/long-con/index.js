@@ -11,11 +11,14 @@ export default {
     attacks: ['4'],
     tags: [
       TAGS.EFFECTS.DISARM,
+      TAGS.TARGETS.ADJACENT_ENEMY,
+      TAGS.TARGETS.MULTIPLE,
     ],
   },
   bottom: {
     tags: [
       TAGS.ACTIONS.CONTROL_ENEMY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],

@@ -19,6 +19,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.ACTIONS.CONTROL_SUMMON,
+      TAGS.TARGETS.ADJACENT_ALLY,
     ],
   },
 };

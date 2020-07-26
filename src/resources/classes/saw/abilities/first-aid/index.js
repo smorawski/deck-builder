@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.CLASSES.SAW,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.OTHER.XP,
     ],
   },

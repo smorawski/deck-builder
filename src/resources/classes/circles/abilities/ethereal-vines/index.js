@@ -19,6 +19,8 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.ACTIONS.HEAL,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
     ],
   },
 };

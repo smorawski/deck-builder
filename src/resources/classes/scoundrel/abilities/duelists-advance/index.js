@@ -13,6 +13,7 @@ export default {
   },
   bottom: {
     moves: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.ONE_ROUND,
       TAGS.CLASSES.SCOUNDREL,
     ],

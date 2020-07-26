@@ -20,6 +20,7 @@ export default {
   bottom: {
     tags: [
       TAGS.CLASSES.CTHULHU,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
       TAGS.DURATION.ONE_ROUND,
     ],

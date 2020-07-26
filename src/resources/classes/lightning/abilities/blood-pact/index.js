@@ -16,6 +16,7 @@ export default {
   },
   bottom: {
     tags: [
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.CLASSES.LIGHTNING,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,

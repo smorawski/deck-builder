@@ -21,6 +21,7 @@ export default {
       TAGS.EFFECTS.POISON,
       TAGS.EFFECTS.WOUND,
       TAGS.EFFECTS.MUDDLE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

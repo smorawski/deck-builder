@@ -20,6 +20,7 @@ export default {
     tags: [
       TAGS.CLASSES.TWO_MINI,
       TAGS.ACTIONS.PUSH,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.OTHER.XP,
     ],
   },

@@ -9,7 +9,8 @@ export default {
   level: LEVELS[8],
   top: {
     tags: [
-      TAGS.ACTIONS.CONTROL_ENEMY,
+      TAGS.ACTIONS.CONTROL_SUMMON,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.EFFECTS.POISON,
       TAGS.EFFECTS.WOUND,
       TAGS.OTHER.XP,

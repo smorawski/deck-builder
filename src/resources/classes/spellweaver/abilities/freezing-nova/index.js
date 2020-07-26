@@ -8,9 +8,10 @@ export default {
   image,
   level: LEVELS[1],
   top: {
-    attacks: ['2/3'],
+    attacks: ['2'],
     tags: [
       TAGS.EFFECTS.IMMOBILIZE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.USE_ELEMENTS.FROST,
     ],

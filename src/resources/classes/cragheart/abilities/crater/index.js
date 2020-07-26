@@ -19,6 +19,8 @@ export default {
   bottom: {
     moves: ['4'],
     tags: [
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.EFFECTS.JUMP,
       TAGS.OTHER.LOST,
       TAGS.OTHER.XP,

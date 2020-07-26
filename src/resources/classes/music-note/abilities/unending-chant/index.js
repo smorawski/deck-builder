@@ -18,6 +18,7 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.SHIELD,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.DURATION.ONE_ROUND,
     ],

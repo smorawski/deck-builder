@@ -10,6 +10,7 @@ export default {
   top: {
     attacks: ['3'],
     tags: [
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.USE_ELEMENTS.FIRE,
     ],
@@ -18,6 +19,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.EFFECTS.WOUND,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

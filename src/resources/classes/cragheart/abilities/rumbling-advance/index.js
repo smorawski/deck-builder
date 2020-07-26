@@ -18,6 +18,8 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.CLASSES.CRAGHEART,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.INCREASE_ELEMENTS.EARTH,
     ],
   },

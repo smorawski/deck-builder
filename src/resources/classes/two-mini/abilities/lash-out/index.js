@@ -11,6 +11,7 @@ export default {
     attacks: ['4'],
     tags: [
       TAGS.CLASSES.TWO_MINI,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
     ],

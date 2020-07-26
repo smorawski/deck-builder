@@ -18,6 +18,7 @@ export default {
   bottom: {
     tags: [
       TAGS.EFFECTS.DISARM,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.OTHER.XP,
     ],

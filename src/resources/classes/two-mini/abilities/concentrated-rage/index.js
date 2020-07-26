@@ -17,6 +17,7 @@ export default {
   bottom: {
     tags: [
       TAGS.CLASSES.TWO_MINI,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,
     ],

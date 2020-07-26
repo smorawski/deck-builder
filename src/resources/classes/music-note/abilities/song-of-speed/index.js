@@ -9,6 +9,7 @@ export default {
   level: LEVELS[1],
   top: {
     tags: [
+      TAGS.EFFECTS.INCREASE_MOVE,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
       TAGS.CLASSES.MUSIC_NOTE,

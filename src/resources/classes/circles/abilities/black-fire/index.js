@@ -21,6 +21,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.EFFECTS.MUDDLE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

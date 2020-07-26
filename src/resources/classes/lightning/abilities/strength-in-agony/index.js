@@ -11,6 +11,7 @@ export default {
     attacks: ['3'],
     tags: [
       TAGS.CLASSES.LIGHTNING,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.OTHER.XP,
     ],
   },
@@ -18,6 +19,7 @@ export default {
     moves: ['4'],
     tags: [
       TAGS.CLASSES.LIGHTNING,
+      TAGS.EFFECTS.INCREASE_MOVE,
     ],
   },
 };

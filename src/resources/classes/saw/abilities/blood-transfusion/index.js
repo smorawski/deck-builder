@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.ACTIONS.HEAL,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.OTHER.XP,
     ],
   },
@@ -17,6 +18,7 @@ export default {
     attacks: ['3'],
     tags: [
       TAGS.EFFECTS.HEAL,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

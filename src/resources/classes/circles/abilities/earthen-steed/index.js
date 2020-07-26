@@ -10,6 +10,7 @@ export default {
   top: {
     tags: [
       TAGS.USE_ELEMENTS.EARTH,
+      TAGS.EFFECTS.INCREASE_MOVE,
       TAGS.OTHER.XP,
       TAGS.DURATION.PERMANENT,
       TAGS.OTHER.LOST,

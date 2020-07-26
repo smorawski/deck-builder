@@ -18,8 +18,10 @@ export default {
   bottom: {
     tags: [
       TAGS.CLASSES.CRAGHEART,
+      TAGS.EFFECTS.INCREASE_ATTACK,
       TAGS.DURATION.USES,
       TAGS.OTHER.XP,
+      TAGS.OTHER.LOST,
     ],
   },
 };

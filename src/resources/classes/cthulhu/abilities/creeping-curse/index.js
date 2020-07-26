@@ -18,6 +18,7 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.CURSE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
 };

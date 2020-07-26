@@ -16,6 +16,7 @@ export default {
   bottom: {
     tags: [
       TAGS.EFFECTS.POISON,
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.TARGETS.MULTIPLE,
     ],
   },

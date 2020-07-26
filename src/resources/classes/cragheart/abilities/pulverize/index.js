@@ -10,6 +10,7 @@ export default {
   top: {
     attacks: ['3'],
     tags: [
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.ACTIONS.PUSH,
       TAGS.CLASSES.CRAGHEART,
       TAGS.OTHER.XP,
@@ -20,6 +21,7 @@ export default {
     attacks: ['2', '2'],
     moves: ['5'],
     tags: [
+      TAGS.TARGETS.ADJACENT_ENEMY,
       TAGS.OTHER.XP,
       TAGS.OTHER.LOST,
     ],

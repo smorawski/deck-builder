@@ -11,6 +11,7 @@ export default {
     tags: [
       TAGS.ACTIONS.CREATE_TRAP,
       TAGS.EFFECTS.MUDDLE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
     ],
   },
   bottom: {

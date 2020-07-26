@@ -19,6 +19,7 @@ export default {
     moves: ['3'],
     tags: [
       TAGS.EFFECTS.STUN,
+      TAGS.TARGETS.ADJACENT_ENEM,
     ],
   },
 };

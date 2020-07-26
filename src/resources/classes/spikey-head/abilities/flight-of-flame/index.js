@@ -11,6 +11,8 @@ export default {
     tags: [
       TAGS.ACTIONS.CREATE_TRAP,
       TAGS.EFFECTS.WOUND,
+      TAGS.TARGETS.ADJACENT_ALLY,
+      TAGS.TARGETS.MULTIPLE,
     ],
   },
   bottom: {

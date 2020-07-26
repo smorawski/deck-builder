@@ -18,6 +18,7 @@ export default {
   bottom: {
     tags: [
       TAGS.EFFECTS.STRENGTHEN,
+      TAGS.TARGETS.ADJACENT_ALLY,
       TAGS.TARGETS.MULTIPLE,
       TAGS.USE_ELEMENTS.LIGHT,
       TAGS.OTHER.RANGED,

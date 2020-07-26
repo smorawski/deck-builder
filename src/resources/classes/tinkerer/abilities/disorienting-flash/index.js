@@ -20,6 +20,8 @@ export default {
     moves: ['2'],
     tags: [
       TAGS.EFFECTS.MUDDLE,
+      TAGS.TARGETS.ADJACENT_ENEMY,
+      TAGS.TARGETS.MULTIPLE,
     ],
   },
 };
